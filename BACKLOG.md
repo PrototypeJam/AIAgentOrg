@@ -17,3 +17,13 @@ This file tracks outstanding tasks and feature ideas for the project. Items are 
    - Wrap the major steps of each module in `traced_span` contexts and use `DetailedLoggingHooks` for all agents to record start/end events, tool calls, and outputs.
    - Propagate a shared `process_id` or `trace_id` between modules to link traces across the full workflow.
    - Document the new setup and usage in the README, including instructions for viewing trace files.
+
+## Some other things I'm thinking about:
+
+* Adding Claude 3.7 as a model
+* Adding Perplexity for search
+* Adding agents as tools
+* Adding the traces to .log files or to their own files
+* FastAPI with static site front-end maybe on Vercel or Replit
+* Using endpoints to exchange JSON data between modules
+* Streaming with `Runner.run_streamed()` for real-time updates as plans develop

@@ -177,23 +177,9 @@ I encourage you to experiment with this system:
 
 This project is meant to demonstrate an approach to agent-based planning that can be extended and improved by the community.
 
-## Roadmap
-
-Some things I'm thinking about:
-
-* Adding Claude 3.7 as a model
-* Adding Perplexity for search
-* Adding agents as tools
-* Adding the traces to .log files or to their own files
-* FastAPI with static site front-end maybe on Vercel or Replit
-* Using endpoints to exchange JSON data between modules
-* Streaming with `Runner.run_streamed()` for real-time updates as plans develop
-
 ## Backlog
 
-Longer term tasks and feature ideas are tracked in
-[BACKLOG.md](BACKLOG.md). This backlog serves as a running to‑do list for
-contributors who want to follow or extend future work.
+Project fixes, improvements, and feature ideas are tracked in [BACKLOG.md](BACKLOG.md). This backlog serves as a running to‑do list for contributors who want to follow or extend future work.
 
 ## License
 

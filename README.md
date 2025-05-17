@@ -189,6 +189,12 @@ Some things I'm thinking about:
 * Using endpoints to exchange JSON data between modules
 * Streaming with `Runner.run_streamed()` for real-time updates as plans develop
 
+## Backlog
+
+Longer term tasks and feature ideas are tracked in
+[BACKLOG.md](BACKLOG.md). This backlog serves as a running to‑do list for
+contributors who want to follow or extend future work.
+
 ## License
 
 This project is licensed under Apache 2 License - see the LICENSE file for details.

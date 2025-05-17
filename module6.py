@@ -9,27 +9,24 @@ def clean_markdown_content(item_title, item_description):
     Clean up markdown content to remove duplicate headers and unnecessary formatting
     while preserving the important content.
     """
-    # Skip the first header that matches or contains the item title
+    # Ensure we can safely operate on the description
+    if not isinstance(item_description, str):
+        item_description = str(item_description or "")
+
+    # Split the description into lines
     lines = item_description.split('\n')
     cleaned_lines = []
-    
+
     # Skip headers that match the item title and "Expanded Item" text
-    skip_line = False
-    for i, line in enumerate(lines):
+    for line in lines:
         # Skip lines with headers that duplicate or contain the item title
         if (line.startswith('#') and item_title.lower() in line.lower()) or "expanded item:" in line.lower():
-            skip_line = True
             continue
-        
+
         # Skip lines with "overview", "step", and header markers from the original markdown
         if re.match(r'^#{3,} (Step \d+:|Overview)', line):
-            skip_line = True
             continue
-            
-        # Don't skip the rest of the content
-        skip_line = False
-        
-        # Add the line to our cleaned lines
+
         cleaned_lines.append(line)
     
     # Remove redundant blank lines (more than 2 in a row)
@@ -109,7 +106,7 @@ def main():
     plan_items = revised_outline.get("plan_items", [])
     for i, item in enumerate(plan_items, 1):
         item_title = item.get("item_title", f"Step {i}")
-        item_description = item.get("item_description", "")
+        item_description = item.get("item_description") or ""
         
         # Add the step title
         lines.append(f"### Step {i}: {item_title}")

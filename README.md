@@ -25,9 +25,9 @@ The true power of this system is its generality - it can handle virtually any go
 
 ## Project Structure
 
-The project consists of five modules that work together in a modular pipeline:
+The project consists of six modules that work together in a modular pipeline:
 
-### Module 1: Criteria Generation (`module1.py`)
+### Module 1: Criteria Generation (`module1-opentelemetry-gm-1156.py`)
 - Takes any user goal as input
 - Uses a specialized agent to identify key success criteria specific to your goal
 - Produces detailed reasoning and ratings for each criterion
@@ -44,6 +44,7 @@ The project consists of five modules that work together in a modular pipeline:
 - Uses an expansion agent to flesh out each plan item in detail
 - Evaluates each expanded item against the success criteria
 - Creates a detailed evaluation summary for the expanded plan
+- `module3.py` and `module3-gem.py` are alternative implementations
 
 ### Module 4: Revision Identification (`module4.py`)
 - Analyzes evaluation results from Module 3
@@ -56,6 +57,10 @@ The project consists of five modules that work together in a modular pipeline:
 - Implements the revision requests into the plan items
 - Evaluates how well the revisions address criteria
 - Creates a final, revised plan with improvements
+
+### Module 6: Markdown Export (`module6.py`)
+- Converts the revised plan from Module 5 into a Markdown document
+- Saves the result for easy viewing and sharing
 
 ## Modularity and Interoperability
 

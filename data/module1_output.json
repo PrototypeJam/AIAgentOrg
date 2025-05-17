@@ -1,0 +1,47 @@
+{
+    "goal": "create a platform composed of AI agents powered by frontier models like GPT-o3 and Gemini 2.5 and Claude 3.7 that can collaborate, use APIs and tools, share memory, and can create, execute, modify, and test plans and software they build to ensure success.",
+    "success_criteria": [
+        {
+            "criteria": "Inter-Model Collaboration and Consensus",
+            "reasoning": "Ensures effective and reliable outputs through collaboration, which is crucial for complex task execution.",
+            "rating": 9
+        },
+        {
+            "criteria": "Advanced Coding Capabilities",
+            "reasoning": "Directly impacts the platform\u2019s ability to create and modify software autonomously, a core goal.",
+            "rating": 10
+        },
+        {
+            "criteria": "Effective API and Tool Integration",
+            "reasoning": "Necessary for accessing and utilizing external resources, which is essential for dynamic operations.",
+            "rating": 8
+        },
+        {
+            "criteria": "Shared Memory and Context Management",
+            "reasoning": "Supports coherent, long-term task execution and decision-making, crucial for maintaining context.",
+            "rating": 9
+        },
+        {
+            "criteria": "Autonomous Planning and Execution",
+            "reasoning": "Core functionality for achieving the goal of the platform, enabling independent task completion.",
+            "rating": 10
+        }
+    ],
+    "selected_criteria": [
+        {
+            "criteria": "Inter-Model Collaboration and Consensus",
+            "reasoning": "Ensures effective and reliable outputs through collaboration, which is crucial for complex task execution. It supports the platform in making collective decisions based on diverse inputs, improving the accuracy and reliability of the actions performed by the AI agents.",
+            "rating": 9
+        },
+        {
+            "criteria": "Autonomous Planning and Execution",
+            "reasoning": "Core functionality for achieving the goal of the platform, enabling independent task completion. It allows the AI agents to autonomously manage projects from start to finish, testing, and iterating on their actions to ensure successful outcomes.",
+            "rating": 10
+        },
+        {
+            "criteria": "Advanced Coding Capabilities",
+            "reasoning": "Directly impacts the platform\u2019s ability to create and modify software autonomously, a core goal. The ability to generate, execute, and test code is fundamental for developing applications and systems as part of the platform's core functionality.",
+            "rating": 10
+        }
+    ]
+}
